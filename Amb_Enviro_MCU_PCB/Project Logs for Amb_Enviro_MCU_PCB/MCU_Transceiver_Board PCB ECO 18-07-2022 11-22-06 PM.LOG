@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=3v3 Pin=LED5-2
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation

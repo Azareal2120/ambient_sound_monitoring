@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GNDBatt Pin=SOT23_6-1
+Removed Pin From Net: NetName=S2 Pin=SOT23_6-3
+Removed Pin From Net: NetName=G1 Pin=SOT23_6-4
+Removed Pin From Net: NetName=G2 Pin=SOT23_6-6
+Added Pin To Net: NetName=S2 Pin=SOT23_6-1
+Added Pin To Net: NetName=GNDBatt Pin=SOT23_6-3
+Added Pin To Net: NetName=G2 Pin=SOT23_6-4
+Added Pin To Net: NetName=G1 Pin=SOT23_6-6
+Change Net Name : Old Net Name=Net1_1 New Net Name=BATT+
+Change Net Name : Old Net Name=NetBMS_5 New Net Name=BMS_InV
+Added Room: Name=Battery System

@@ -1,0 +1,53 @@
+Added Component: Designator=ESPIC(ESP32C3WROOM02H4)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.in/datasheet/2/891/Espressif_Systems_04082021_ESP32_C3_WROOM_02-2295851.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "3.35mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Espressif Systems"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ESP32-C3-WROOM-02-H4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "356-ESP32C3WROOM02H4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-C3-WROOM-02-H4?qs=stqOd1AaK79%2FSA14oWtR%252Bw%3D%3D"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found LEDC1608X120N
+Add Component: Footprint Not Found LEDC1608X120N
+Add Component: Footprint Not Found LEDC1608X120N
+Add Component: Footprint Not Found LEDC1608X120N
+Added Pin To Net: NetName=3v3 Pin=ESPIC-1
+Added Pin To Net: NetName=EN_PD Pin=ESPIC-2
+Added Pin To Net: NetName=GPIO4 Pin=ESPIC-3
+Added Pin To Net: NetName=GPIO5 Pin=ESPIC-4
+Added Pin To Net: NetName=GPIO6 Pin=ESPIC-5
+Added Pin To Net: NetName=GPIO7 Pin=ESPIC-6
+Added Pin To Net: NetName=GPIO8 Pin=ESPIC-7
+Added Pin To Net: NetName=GPIO9 Pin=ESPIC-8
+Added Pin To Net: NetName=GND Pin=ESPIC-9
+Added Pin To Net: NetName=GPIO10 Pin=ESPIC-10
+Added Pin To Net: NetName=RXD0 Pin=ESPIC-11
+Added Pin To Net: NetName=TXD0 Pin=ESPIC-12
+Added Pin To Net: NetName=GPIO18 Pin=ESPIC-13
+Added Pin To Net: NetName=GPIO19 Pin=ESPIC-14
+Added Pin To Net: NetName=Data Pin=ESPIC-15
+Added Pin To Net: NetName=High_Bat Pin=ESPIC-16
+Added Pin To Net: NetName=Mid_Bat Pin=ESPIC-17
+Added Pin To Net: NetName=Low_Bat Pin=ESPIC-18
+Added Pin To Net: NetName=GND Pin=ESPIC-19
+Added Pin To Net: NetName=GND Pin=ESPIC-20
+Added Pin To Net: NetName=GND Pin=ESPIC-21
+Added Pin To Net: NetName=GND Pin=ESPIC-22
+Added Pin To Net: NetName=GND Pin=ESPIC-23
+Added Pin To Net: NetName=GND Pin=ESPIC-24
+Added Pin To Net: NetName=GND Pin=ESPIC-25
+Added Pin To Net: NetName=GND Pin=ESPIC-26
+Added Pin To Net: NetName=GND Pin=ESPIC-27
+Add Pin To Net: Unknown Pin: Pin LED2-1
+Add Pin To Net: Unknown Pin: Pin LED2-2
+Add Pin To Net: Unknown Pin: Pin LED3-1
+Add Pin To Net: Unknown Pin: Pin LED3-2
+Add Pin To Net: Unknown Pin: Pin LED4-1
+Add Pin To Net: Unknown Pin: Pin LED4-2
+Add Pin To Net: Unknown Pin: Pin LED5-1
+Add Pin To Net: Unknown Pin: Pin LED5-2
+Added Member To Class: ClassName=ESP32 Member=Component ESPIC ESP32-C3-WROOM-02-H4
+Add Class Member: Failed to add class member : Component LED2 KP-1608CGCK
+Add Class Member: Failed to add class member : Component LED3 KP-1608CGCK
+Add Class Member: Failed to add class member : Component LED4 KP-1608CGCK
+Add Class Member: Failed to add class member : Component LED5 KP-1608CGCK

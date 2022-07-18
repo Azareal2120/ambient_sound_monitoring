@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=GNDBatt Pin=R11-1
+Removed Pin From Net: NetName=NetLED1_1 Pin=R11-2
+Change Component Footprint: Designator=R11 Old Footprint=J1-0603 New Footprint=RESC1608X55N
+Change Component Comment : Designator=R11 Old Comment=Res3 New Comment=150R
+Change component parameters: Designator = "R11" ("R11"); Footprint = "J1-0603"; UniqueID = "\NSWQDJKF\IGREJQCN" ("\NSWQDJKF\IGREJQCN")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "CR0603-FX-1500ELF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/cr0603-fx-1500elf/bourns?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/pdfs/chpreztr.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CR0603-FX-1500ELF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "652-CR0603FX-1500ELF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CR0603-FX-1500ELF?qs=e7cxVwPieupBDLrUX3Cc4g%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetLED1_1 Pin=R11-1
+Added Pin To Net: NetName=GNDBatt Pin=R11-2
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation

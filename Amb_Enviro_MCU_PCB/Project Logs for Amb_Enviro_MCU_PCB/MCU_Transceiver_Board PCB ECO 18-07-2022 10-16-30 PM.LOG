@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=TXD0 Pin=J3-1
+Removed Pin From Net: NetName=RXD0 Pin=J3-2
+Removed Member From Class: ClassName=ESP32 Member=J3
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Voltage Regulation
