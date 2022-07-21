@@ -1,0 +1,24 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: MCU_Transceiver_Board.PcbDoc   21/07/2022  2:19:52 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : MCU_Transceiver_Board.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.305mm)                                           Round             131       PTH        25.09inch (637.19mm)
+T2      20mil (0.508mm)                                           Round             6         PTH        3.24inch (82.33mm)
+T3      24mil (0.61mm)                                            Round             2         PTH        0.08inch (2.03mm)
+T4      35mil (0.889mm)                                           Round             3         PTH        0.20inch (5.08mm)
+T5      39mil (0.991mm)                                           Round             4         PTH        0.28inch (7.00mm)
+T6      41mil (1.041mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T7      43mil (1.092mm)                                           Round             18        PTH        3.32inch (84.30mm)
+T8      45mil (1.143mm)                                           Round             23        PTH        6.34inch (160.99mm)
+T9      51mil (1.295mm)                                           Round             2         PTH        0.79inch (20.02mm)
+T10     94mil (2.388mm)                                           Round             2         PTH        0.52inch (13.14mm)
+T11     138mil (3.505mm)                                          Round             4         PTH        8.62inch (218.95mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              196
+
+Total Processing Time (hh:mm:ss) : 00:00:00

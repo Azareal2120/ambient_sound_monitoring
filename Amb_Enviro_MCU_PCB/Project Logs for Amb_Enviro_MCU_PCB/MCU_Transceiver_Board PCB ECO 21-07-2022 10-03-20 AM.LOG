@@ -1,0 +1,48 @@
+Removed Pin From Net: NetName=GPIO8 Pin=J4-1
+Removed Pin From Net: NetName=GPIO7 Pin=J4-2
+Removed Pin From Net: NetName=GPIO6 Pin=J4-3
+Removed Pin From Net: NetName=GPIO5 Pin=J4-4
+Removed Pin From Net: NetName=BattStat Pin=J4-5
+Removed Member From Class: ClassName=ESP32 Member=J4
+Change Component Designator: OldDesignator=         NewDesignator=C15
+Added Component: Designator=1(BAT-2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Battery; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "BAT-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=J?(HDRV5W67P0X254_1X5_1270X241X858P)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "68000-105HTLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/68000-105htlf/amphenol-fci"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.arrow.com/en/products/68000-105htlf/amphenol-fci"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.58mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Amphenol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "68000-105HTLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "649-68000-105HTLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/68000-105HTLF?qs=w%2Fv1CP2dgqrYgNyQVoiqDw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=M1(RB5-10.5)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Capacitor (Radial); 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB5-10.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BATT+ Pin=1-1
+Added Pin To Net: NetName=GNDBatt Pin=1-2
+Added Pin To Net: NetName=BattStat Pin=J?-1
+Added Pin To Net: NetName=GPIO8 Pin=J?-2
+Added Pin To Net: NetName=GPIO7 Pin=J?-3
+Added Pin To Net: NetName=GPIO6 Pin=J?-4
+Added Pin To Net: NetName=GPIO5 Pin=J?-5
+Added Pin To Net: NetName=M+ Pin=M1-1
+Added Pin To Net: NetName=GND Pin=M1-2
+Added Member To Class: ClassName=Battery System Member=Component 1 Battery
+Added Member To Class: ClassName=ESP32 Member=Component J? 68000-105HTLF
+Added Member To Class: ClassName=Motor Circuit Member=Component M1 ERM Motor
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation

@@ -1,0 +1,2 @@
+Remove Pin=U1-51 From Net=I2S2_CK
+Remove Pin=U1-53 From Net=I2S2_SD

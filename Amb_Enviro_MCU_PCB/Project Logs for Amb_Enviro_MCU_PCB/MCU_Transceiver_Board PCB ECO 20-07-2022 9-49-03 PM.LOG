@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=JBatt-2
+Added Pin To Net: NetName=S2 Pin=JBatt-2
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation

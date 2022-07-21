@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=GPIO10 Pin=J5-1
+Removed Pin From Net: NetName=GPIO18 Pin=J5-2
+Removed Pin From Net: NetName=GPIO19 Pin=J5-3
+Removed Pin From Net: NetName=GND Pin=J5-4
+Removed Pin From Net: NetName=GPIO9 Pin=J5-5
+Removed Pin From Net: NetName=GND Pin=TPower-1
+Removed Pin From Net: NetName=3v3 Pin=TPower-2
+Removed Member From Class: ClassName=MCU_Transceiver_Board Member=TPower
+Change Component Footprint: Designator=JBoot Old Footprint=HDRV2W66P0X254_1X2_508X254X874P New Footprint=HDR1X3
+Change Component Comment : Designator=JBoot Old Comment=M20-9990246 New Comment=Header 3
+Change Component Designator: OldDesignator=H NewDesignator=LED4
+Change Component Designator: OldDesignator=L NewDesignator=LED2
+Change component parameters: Designator = "JBoot" ("JBoot"); Footprint = "HDRV2W66P0X254_1X2_508X254X874P"; UniqueID = "\TUJTZPGS" ("\TUJTZPGS")
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=1(BAT-2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Battery; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "BAT-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BATT+ Pin=1-1
+Added Pin To Net: NetName=GNDBatt Pin=1-2
+Added Pin To Net: NetName=GPIO9 Pin=J5-1
+Added Pin To Net: NetName=GPIO10 Pin=J5-2
+Added Pin To Net: NetName=GPIO18 Pin=J5-3
+Added Pin To Net: NetName=GPIO19 Pin=J5-4
+Added Pin To Net: NetName=GND Pin=J5-5
+Added Pin To Net: NetName=GND Pin=JBoot-3
+Added Member To Class: ClassName=Battery System Member=Component 1 Battery
+Added Member To Class: ClassName=ESP32 Member=Component LED2 KP-1608CGCK
+Added Member To Class: ClassName=ESP32 Member=Component LED3 KP-1608CGCK
+Added Member To Class: ClassName=ESP32 Member=Component LED4 KP-1608CGCK
+Added Member To Class: ClassName=ESP32 Member=Component R4 62R
+Added Member To Class: ClassName=ESP32 Member=Component R5 62R
+Added Member To Class: ClassName=ESP32 Member=Component R6 62R
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation

@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=S2 Pin=J3v3-1
+Removed Pin From Net: NetName=3v3 Pin=J3v3-2
+Added Pin To Net: NetName=3v3 Pin=J3v3-1
+Added Pin To Net: NetName=S2 Pin=J3v3-2
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation

@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=BATT+ Pin=ESPIC-3
+Added Pin To Net: NetName=BATT+ Pin=J4-5
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation

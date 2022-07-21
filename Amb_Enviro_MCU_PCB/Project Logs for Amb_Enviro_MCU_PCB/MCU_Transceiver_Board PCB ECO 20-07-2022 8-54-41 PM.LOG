@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=BMS NewDesignator=U3
+Change Component Designator: OldDesignator=Buck NewDesignator=U5
+Change Component Designator: OldDesignator=Recharger NewDesignator=U2
+Change Component Designator: OldDesignator=SOT23_6 NewDesignator=U4
+Change Net Name : Old Net Name=NetBMS_2 New Net Name=NetR13_1
+Change Net Name : Old Net Name=NetBuck_4 New Net Name=NetC13_1
+Change Net Name : Old Net Name=NetBuck_5 New Net Name=NetL1_1
+Added Room: Name=Battery System
+Added Room: Name=ESP32
+Added Room: Name=MCU_Transceiver_Board
+Added Room: Name=Microphone
+Added Room: Name=Motor Circuit
+Added Room: Name=Voltage Regulation
