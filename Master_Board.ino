@@ -1,5 +1,5 @@
 /**
-   Code to read in data from the STM32 output using UART, and then 
+   Code to read in data from the microphone output, and then 
    transmitting it to the motor board.
 
    Written by Riley Dean, with code from Arvind Ravulavaru <https://github.com/arvindr21>
@@ -23,22 +23,6 @@ typedef struct sound_data {
   int alarm_mode;
   int sound_level;
 } sound_data;
-
-
-// Setting up UART
-void uart_init() {
-  const uart_port_t uart_num = UART_NUM_2;
-  uart_config_t uart_config = {
-      .baud_rate = 115200,
-      .data_bits = UART_DATA_9_BITS,
-      .parity = UART_PARITY_ENABLE,
-      .stop_bits = UART_STOP_BITS_1,
-      .flow_ctrl = UART_HW_FLOWCTRL_CTS_RTS,
-      .rx_flow_ctrl_thresh = 122,
-  };
-  // Setting UART data
-  ESP_ERROR_CHECK(uart_param_config(uart_num, &uart_config));
-}
 
 // Init ESP Now with fallback
 void InitESPNow() {
@@ -231,10 +215,6 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
 }
 
 
-void uart_init() {
-
-}
-
 
 void setup() {
   Serial.begin(115200);
@@ -245,8 +225,6 @@ void setup() {
   Serial.print("STA MAC: "); Serial.println(WiFi.macAddress());
   // Init ESPNow with a fallback logic
   InitESPNow();
-  // Initialising UART communication
-  uart_init();
   // Once ESPNow is successfully Init, we will register for Send CB to
   // get the status of Trasnmitted packet
   esp_now_register_send_cb(OnDataSent);
