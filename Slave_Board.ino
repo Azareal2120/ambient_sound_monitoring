@@ -3,6 +3,9 @@
  *  - Battery Status
  *  - Saves sound data
  *  - Prints to serial monitor for debugging
+ *  
+ *  AN interrupt routine is also available that is used to print out the sound data recorded by
+ *  the user over the past 256 samples (or less)
  *  Created by Riley Dean, with ESP-NOW code by Arvind Ravulavaru <https://github.com/arvindr21>.
  */
 
@@ -14,11 +17,25 @@
 #define ALARM_OFF
 #define ALARM_ON 1
 
+// Defining maximum array size
+#define MAX_SIZE 256
+
+// Pin definitions
+#define MOTOR_PIN 3
+#define LOW_LED 0
+#define MED_LED 1
+#define HIGH_LED 2
+#define INTERRUPT_PIN 6
+
 // Defining sound_data struct
 typedef struct sound_data {
   int alarm_mode;
   int sound_level;
 } sound_data;
+
+// Defining *shudder* global variables for printing data
+int ind = 0;
+sound_data *sound_array[MAX_SIZE];
 
 // Init ESP Now with fallback
 void InitESPNow() {
@@ -46,6 +63,12 @@ void configDeviceAP() {
   }
 }
 
+// Interrupt handle function
+void IRAM_ATTR find_print() {
+  Serial.print("Interrupt detected. Printing out recorded sound levels");
+  print_sound_data();
+}
+
 void setup() {
   Serial.begin(115200);
   Serial.println("Program begin");
@@ -53,12 +76,12 @@ void setup() {
   // Setting ADC resolution
   analogReadResolution(12);
   // Setting Motor Pin direction
-  pinMode(3, OUTPUT);
+  pinMode(MOTOR_PIN, OUTPUT);\
 
   // Setting pin directions for LEDs
-  pinMode(0, OUTPUT);
-  pinMode(1, OUTPUT);
-  pinMode(2, OUTPUT);
+  pinMode(LOW_LED, OUTPUT);
+  pinMode(MED_LED, OUTPUT);
+  pinMode(HIGH_LED, OUTPUT);
   
   //Set device in AP mode to begin with
   WiFi.mode(WIFI_AP);
@@ -77,21 +100,23 @@ void setup() {
 void OnDataRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len) {
   // Checking battery voltage, and altering LEDs if required
   int batt_voltage = analogReadMilliVolts(2);
+  Serial.print("Current battery voltage: ");
+  Serial.println(batt_voltage);
   if (batt_voltage < 3400) {
     // Low battery level
-    digitalWrite(0, HIGH);
-    digitalWrite(1, LOW);
-    digitalWrite(2, LOW);
+    digitalWrite(LOW_LED, HIGH);
+    digitalWrite(MED_LED, LOW);
+    digitalWrite(HIGH_LED, LOW);
   } else if (batt_voltage < 3600) {
     // Medium Battery Level
-    digitalWrite(0, HIGH);
-    digitalWrite(1, HIGH);
-    digitalWrite(2, LOW);
+    digitalWrite(LOW_LED, HIGH);
+    digitalWrite(MED_LED, HIGH);
+    digitalWrite(HIGH_LED, LOW);
   } else {
     // High Battery Level
-    digitalWrite(0, HIGH);
-    digitalWrite(1, HIGH);
-    digitalWrite(2, HIGH);
+    digitalWrite(LOW_LED, HIGH);
+    digitalWrite(MED_LED, HIGH);
+    digitalWrite(HIGH_LED, HIGH);
   }
 
   // Processing the sound data received
@@ -104,20 +129,52 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len) {
   // Converting data to sound_data struct
   sound_data *recorded_data = (sound_data *) data;
   if (recorded_data->alarm_mode == 0) {
-    Serial.print("No alarm required");
+    Serial.print("No alarm required\n");
   } else if (recorded_data->alarm_mode >= 1) {
-    Serial.print("Alarm required");
-    digitalWrite(3, HIGH);
+    Serial.print("Alarm required\n");
+    alarm_user(recorded_data->alarm_mode);
   } else {
     Serial.print("Invalid data read");
   }
   // Printing out serial data
   char output_string[32];
-  sprintf(output_string, "Sound = %d dB", recorded_data->sound_level);
+  sprintf(output_string, "Sound = %d dB\n", recorded_data->sound_level);
   Serial.println(output_string);
-  
+
   Serial.println("");
 }
+
+
+// Code to print out each element in the array upon an interrupt occurring
+void print_sound_data(void) {
+  Serial.print("Total recorded sound data: ");
+  for (int i = 0; i < ind; i++) {
+    char output_string[32];
+    sprintf(output_string, "Sound = %d dB", sound_array[i]->sound_level);
+    Serial.println(output_string);
+    sprintf(output_string, "Alarm Mode: %d", sound_array[i]->alarm_mode);
+    Serial.println(output_string);
+  }
+}
+
+// Function for calculating which mode to print out for the motor
+void alarm_user(int alarm_mode) {
+  if (alarm_mode == 1) {
+    // standard alarm
+    digitalWrite(MOTOR_PIN, HIGH);
+    delay(1000);
+    digitalWrite(MOTOR_PIN, LOW);
+  } else if (alarm_mode == 2) {
+    // panik
+    for (int i = 0; i < 3; i++) {
+      digitalWrite(MOTOR_PIN, HIGH);
+      delay(200);
+      digitalWrite(MOTOR_PIN, LOW);
+      delay(200);
+    }
+  }
+}
+
 
 void loop() {
   // Loop occurs earlier, so nothing to be done here :)
